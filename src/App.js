@@ -1,9 +1,20 @@
 import React from "react";
-import GroupExample from "./components/container";
+import { Route, Routes } from 'react-router-dom';
+import Forexcontainer from "./components/container"
+import { useSelector } from "react-redux";
+import Navigation from "./components/navbar";
+import CurrencyExchange from "./components/details";
+
 function App() {
+  const currencies = useSelector((state) => state.currency.currency);
   return (
     <div className="App">
-      <GroupExample />
+      <Navigation/>
+      <Routes>
+        <Route path="/" element={<Forexcontainer list={currencies} />} />
+        <Route path="/CurrencyExchange/:currencyName" element={<CurrencyExchange />} />
+      </Routes>
+      
     </div>
   );
 }
