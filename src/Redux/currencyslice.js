@@ -7,15 +7,15 @@ const initialState = {
   currency: [],
   error: "",
 };
-export const fetchRockets = createAsyncThunk("currency/fetchUsers", () =>
+const baseurl="https://financialmodelingprep.com/api/v3/fx";
+const apiKey="?apikey=86a9aedd0311ac1dab63f6b5b96e0c2c"
+export const fetchExchange = createAsyncThunk("currency/fetchUsers", (currency) =>
   axios
-    .get(
-      "https://financialmodelingprep.com/api/v3/fx?apikey=86a9aedd0311ac1dab63f6b5b96e0c2c"
-    )
+    .get(`${baseurl}${currency}${apiKey}`)
     .then((response) => response.data)
 );
 // Creating rocket slice.
-const rocketSlice = createSlice({
+const exchangeSlice = createSlice({
   name: "currency",
   initialState,
   // Reducers for reserving and canceling a rocket.
@@ -29,15 +29,15 @@ const rocketSlice = createSlice({
     },
   },
   extraReducers: (builder) => {
-    builder.addCase(fetchRockets.pending, (state) => {
+    builder.addCase(fetchExchange.pending, (state) => {
       state.loading = true;
     });
-    builder.addCase(fetchRockets.fulfilled, (state, action) => {
+    builder.addCase(fetchExchange.fulfilled, (state, action) => {
       state.loading = false;
       state.currency = action.payload;
       state.error = "";
     });
-    builder.addCase(fetchRockets.rejected, (state, action) => {
+    builder.addCase(fetchExchange.rejected, (state, action) => {
       state.loading = false;
       state.currency = [];
       state.error = action.payload;
@@ -45,4 +45,4 @@ const rocketSlice = createSlice({
   },
 });
 
-export default rocketSlice.reducer;
+export default exchangeSlice.reducer;
