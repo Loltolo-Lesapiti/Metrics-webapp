@@ -6,7 +6,7 @@ import "./container.css";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
-import { fetchRockets } from "../../Redux/forexslice";
+import { fetchCurrencies } from "../../Redux/forexslice";
 import Form from "react-bootstrap/Form";
 import Slider from "./slider";
 import slide3 from "../../images/money.jpg";
@@ -27,7 +27,7 @@ export default function Forexcontainer() {
 
   const dispatch = useDispatch();
   useEffect(() => {
-    dispatch(fetchRockets());
+    dispatch(fetchCurrencies());
   }, [dispatch]);
   return (
     <>
@@ -35,7 +35,7 @@ export default function Forexcontainer() {
       <Form className="d-flex">
         <Form.Control
           type="search"
-          placeholder="Search here"
+          placeholder="&#8595;"
           className="me-2 search"
           aria-label="Search"
           onChange={handleChange}

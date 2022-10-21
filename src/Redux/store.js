@@ -1,9 +1,9 @@
 import { configureStore } from "@reduxjs/toolkit";
-import rocketSlice from "./forexslice";
+import currencySlice from "./forexslice";
 
 const store = configureStore({
   reducer: {
-    currency: rocketSlice,
+    currency: currencySlice,
   },
 });
 
