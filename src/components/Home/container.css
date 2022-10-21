@@ -1,5 +1,16 @@
-.search{
+.search {
   border-radius: 2px solid black;
   height: 40px;
-  color: black;
+  font-size: larger;
+  font-size: 100;
+}
+::placeholder {
+  color: red;
+}
+.cardtext {
+  text-decoration: none;
+  color: #000000;
+}
+.cardbody {
+  text-decoration: none;
 }

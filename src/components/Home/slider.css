@@ -1,8 +1,11 @@
-.slider{
-    height: 300px;
-  }
-  
-  .slider img {
-      height: 300px;
-      width: 100%;
-  }
+.slider {
+  height: 300px;
+}
+
+.slider img {
+  height: 300px;
+  width: 100%;
+}
+.slider h3 p {
+  color: rgb(102, 17, 182);
+}

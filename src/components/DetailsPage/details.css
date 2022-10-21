@@ -1,0 +1,17 @@
+.back {
+  width: 48px;
+  height: 33px;
+  margin: 10px;
+}
+.backBtn {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+}
+.search {
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+}
