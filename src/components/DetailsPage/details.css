@@ -1,0 +1,57 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(219, 215, 223);
+  font-family: "Lato", sans-serif;
+}
+
+.back {
+  width: 48px;
+  height: 33px;
+}
+
+.backBtn {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+}
+
+.search {
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+}
+
+.cardHome {
+  background-image: url("../../images/dollar.png");
+  height: 250px;
+}
+
+.mainnav {
+  background-color: rgb(219, 215, 223);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+#navText {
+  color: rgba(0, 0, 0, 0.76);
+  font-weight: 500;
+  font-size: 24px;
+}
+
+#cardBody {
+  padding: 0;
+}
+
+#listDetails {
+  display: flex;
+  justify-content: space-between;
+}
