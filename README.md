@@ -16,7 +16,7 @@ This application fetches data about forex currency exchange from a financial mod
 
 ## Live demo
 
-You can watch [here](https://remarkable-speculoos-576277.netlify.app/) a live demo of our project.
+You can watch [here](https://stunning-pastelito-fea99b.netlify.app/) a live demo of our project.
 
 ## Video demo
 
