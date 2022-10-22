@@ -1,19 +1,19 @@
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import Card from "react-bootstrap/Card";
-import { useState, useEffect } from "react";
-import "./container.css";
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Card from 'react-bootstrap/Card';
+import { useState, useEffect } from 'react';
+import './container.css';
 
-import { Link } from "react-router-dom";
-import { useSelector, useDispatch } from "react-redux";
-import Form from "react-bootstrap/Form";
-import { fetchCurrencies } from "../../Redux/forexslice";
-import Slider from "./slider";
-import slide3 from "../../images/money.jpg";
-import back from "../../images/back.jpg";
+import { Link } from 'react-router-dom';
+import { useSelector, useDispatch } from 'react-redux';
+import Form from 'react-bootstrap/Form';
+import { fetchCurrencies } from '../../Redux/forexslice';
+import Slider from './slider';
+import slide3 from '../../images/money.jpg';
+// import back from '../../images/back.jpg';
 
 export default function Forexcontainer() {
-  const [searchInput, setSearchInput] = useState("");
+  const [searchInput, setSearchInput] = useState('');
   const currencies = useSelector((state) => state.currency.currency);
   const handleChange = (e) => {
     e.preventDefault();
