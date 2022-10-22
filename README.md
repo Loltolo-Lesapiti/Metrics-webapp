@@ -118,6 +118,4 @@ Give a ⭐ if you like this project!
 
 ## 📝 License
 
-## 📝 License
-
 ## This project is [MIT](./MIT.md) licensed.
