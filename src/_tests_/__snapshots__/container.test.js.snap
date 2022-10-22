@@ -26,7 +26,8 @@ Array [
           <p
             className="cardtext card-text"
           >
-            The bidding price is 
+            The bidding price is
+             
             . Click on the currency to view more details.
           </p>
         </div>
