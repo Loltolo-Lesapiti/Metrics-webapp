@@ -1,70 +1,120 @@
-# Getting Started with Create React App
+# Metrics-webapp: Major Forex Details Generator
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This application fetches data about forex currency exchange from a financial modeling API. When the page loads, the application shows the list of categories that could be filtered out using the currency name. The displayed categories shows the numeric values of the exchange information. When user clicks or taps on the category item, the application navigates to the details page. The details page contains the details about a particlar currency exchange.
 
-## Available Scripts
+## Built with
 
-In the project directory, you can run:
+- React for User Interface and Redux for state management.
 
-### `npm start`
+## Additional Tools
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- WebHint
+- Stylelint
+- ESlint
+- Webpack
+- Redux
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Live demo
 
-### `npm test`
+You can watch [here](https://remarkable-speculoos-576277.netlify.app/) a live demo of our project.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Video demo
 
-### `npm run build`
+You can watch [here](https://drive.google.com/file/d/1mDa-p5gaZX7Xc2D1VApZPAneqD6nY7JG/view?usp=sharing) a video demo of our project.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Test
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+To track linter errors locally follow these steps:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Download all the dependencies run:
 
-### `npm run eject`
+```
+npm install
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Track HTML linter errors run:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+npx hint .
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Track CSS linter errors run:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```
+npx stylelint "**/*.{css,scss}"
+```
 
-## Learn More
+Track JavaScript linter errors run:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
+npx eslint ."
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Authors
 
-### Code Splitting
+👤 **Petro Loltolo Lesapiti**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- GitHub: [@petrolesapiti](https://github.com/Loltolo-Lesapiti)
+- LinkedIn: [@petrolesapiti](https://www.linkedin.com/in/petrolesapitiloltolo/)
 
-### Analyzing the Bundle Size
+## Collaborators
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 🤝 Contributing
 
-### Making a Progressive Web App
+Contributions, issues, and feature requests are welcome!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Getting Started
 
-### Advanced Configuration
+To get a local copy follow these simple steps:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+**Clone Your Github Repository**
+Follow these steps to clone your
+**Clone Your Github Repository**
+Follow these steps to clone my Github repo on Windows:
 
-### Deployment
+1. Open Git Bash;
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- If Git is not already installed, it is super simple. Just go to the Git Download Folder and follow the instructions.
 
-### `npm run build` fails to minify
+2. Go to the current directory where you want the cloned directory to be added;
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- To do this, input cd and add your folder location. You can add the folder location by dragging the folder to Git bash.
+- $ cd '/c/Users/Documents/My Git Project'
+
+3. Go to the page of the repository that you want to clone.
+
+4. Click on “Clone or download” and copy the URL.
+5. Use the git clone command along with the copied URL from earlier;
+
+- $ git clone https://
+
+6. Press Enter;
+
+- $ git clone https://
+  Cloning into Git …
+  remote: Counting objects: 13, done.
+  remote: Compressing objects: 100% (13/13), done.
+  remove: Total 13 (delta 1), reused 0 (delta 1)
+  Unpacking objects: 100% (13/13), done.
+  **Congratulations, you have created your first local clone from your remote Github repository.**
+
+  ## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](https://.
+
+## Show your support
+
+Give a ⭐ if you like this project!
+
+## Acknowledgments
+
+- Hat tip to anyone whose code was used
+- Inspiration
+- etc
+
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.
+_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._

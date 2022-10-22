@@ -1,0 +1,12 @@
+.slider {
+  height: 300px;
+}
+
+.slider img {
+  height: 300px;
+  width: 100%;
+}
+
+.sliderMessage {
+  color: rgb(182, 17, 160);
+}

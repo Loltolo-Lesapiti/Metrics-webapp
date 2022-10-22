@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { Route, Routes } from 'react-router-dom';
+import { useSelector } from 'react-redux';
+import Forexcontainer from './components/Home/container';
+import CurrencyExchange from './components/DetailsPage/details';
+import Footer from './components/Navbar/footer';
 
 function App() {
+  const currencies = useSelector((state) => state.currency.currency);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Routes>
+        <Route path="/" element={<Forexcontainer list={currencies} />} />
+        <Route path="/CurrencyExchange/:currencyName" element={<CurrencyExchange />} />
+      </Routes>
+      <Footer />
     </div>
   );
 }
