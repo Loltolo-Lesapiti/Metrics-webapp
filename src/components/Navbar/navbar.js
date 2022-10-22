@@ -6,7 +6,7 @@ function Navigation() {
     <>
       <Navbar bg="dark" variant="dark">
         <Container>
-          <Navbar.Brand href="#home">React Bootstrap</Navbar.Brand>
+          <Navbar.Brand href="#home">TAAS CURRENCY INFO</Navbar.Brand>
         </Container>
       </Navbar>
     </>
