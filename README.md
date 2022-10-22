@@ -20,7 +20,7 @@ You can watch [here](https://stunning-pastelito-fea99b.netlify.app/) a live demo
 
 ## Video demo
 
-You can watch [here](https://drive.google.com/file/d/1mDa-p5gaZX7Xc2D1VApZPAneqD6nY7JG/view?usp=sharing) a video demo of our project.
+You can watch [here](https://drive.google.com/file/d/13_x3zjp-3kn8M9DLrw2hnxsQav11vXdJ/view?usp=sharing) a video demo of our project.
 
 ## Test
 
