@@ -3,8 +3,9 @@
 *::after {
   box-sizing: border-box;
 }
+
 .search {
-  border-radius: 2px solid black;
+  border: 2px solid black;
   height: 40px;
   font-size: larger;
   font-size: 20px;
@@ -15,8 +16,9 @@
 .cardtext,
 a {
   text-decoration: none;
-  color: #000000;
+  color: #000;
 }
+
 .imageBody {
   display: flex;
   align-items: center;
@@ -25,6 +27,7 @@ a {
 .nounderline {
   text-decoration: none;
 }
+
 .backArrow {
   transform: rotateZ(-180deg);
   width: 48px;

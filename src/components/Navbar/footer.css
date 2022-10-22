@@ -1,18 +1,20 @@
-.footer{
-    display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
-    background-color: rgba(17, 16, 16, 0.945);
-    color: whitesmoke;
+.footer {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  background-color: rgba(17, 16, 16, 0.945);
+  color: whitesmoke;
 }
-.footer .col{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
-    margin-top: 20px;
+
+.footer .col {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  margin-top: 20px;
 }
-input{
-    border-radius: 2px;
-    height: 30px;
+
+input {
+  border-radius: 2px;
+  height: 30px;
 }

@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Currency display container Confirm that the currency display renders correctly 1`] = `
+Array [
+  <h3>
+    Currency Exchange
+  </h3>,
+  <div
+    className="list-group"
+    onKeyDown={[Function]}
+  >
+    <div
+      className="list-group-item"
+      data-rr-ui-event-key={null}
+      onClick={[Function]}
+    >
+      <div
+        className="card"
+      >
+        <div
+          className="cardbady card-body"
+        >
+          <div
+            className="card-title h5"
+          />
+          <p
+            className="cardtext card-text"
+          >
+            The bidding price is 
+            . Click on the currency to view more details.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>,
+]
+`;
