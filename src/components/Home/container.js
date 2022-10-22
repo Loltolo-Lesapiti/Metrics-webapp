@@ -10,6 +10,7 @@ import { fetchCurrencies } from "../../Redux/forexslice";
 import Form from "react-bootstrap/Form";
 import Slider from "./slider";
 import slide3 from "../../images/money.jpg";
+import back from "../../images/back.jpg";
 
 export default function Forexcontainer() {
   const [searchInput, setSearchInput] = useState("");
@@ -35,14 +36,14 @@ export default function Forexcontainer() {
       <Form className="d-flex">
         <Form.Control
           type="search"
-          placeholder="&#8595;"
+          placeholder="Search ..."
           className="me-2 search"
           aria-label="Search"
           onChange={handleChange}
           value={searchInput}
         />
       </Form>
-      <Row xs={1} m={2} md={3} sm={2} xs={2} className="g-4">
+      <Row xs={1} m={2} md={3} sm={2} xs={2} className="g-4 ms-2">
         {currencies
           .filter((currency) => {
             if (searchInput === "") {
@@ -58,10 +59,21 @@ export default function Forexcontainer() {
           })
           .slice(0, 6)
           .map((currency) => (
-            <Link to={`/CurrencyExchange/${currency.bid}`}>
-              <Col>
+            <Col>
+              <Link
+                className="nounderline"
+                to={`/CurrencyExchange/${currency.bid}`}
+              >
                 <Card>
-                  <Card.Img variant="top" src={slide3} />
+                  <div className="imageBody">
+                    <Card.Img
+                      variant="top"
+                      className="cardImage"
+                      src={slide3}
+                    />
+
+                    <img className="backArrow" src={back} />
+                  </div>
                   <Card.Body className="cardbady">
                     <Card.Title>{currency.ticker}</Card.Title>
                     <Card.Text className="cardtext">
@@ -70,8 +82,8 @@ export default function Forexcontainer() {
                     </Card.Text>
                   </Card.Body>
                 </Card>
-              </Col>
-            </Link>
+              </Link>
+            </Col>
           ))}
       </Row>
     </>

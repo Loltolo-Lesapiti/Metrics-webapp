@@ -1,16 +1,33 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 .search {
   border-radius: 2px solid black;
   height: 40px;
   font-size: larger;
-  font-size: 100;
+  font-size: 20px;
+  width: 100%;
+  margin: 10px 5%;
 }
-::placeholder {
-  color: red;
-}
-.cardtext {
+
+.cardtext,
+a {
   text-decoration: none;
   color: #000000;
 }
-.cardbody {
+.imageBody {
+  display: flex;
+  align-items: center;
+}
+
+.nounderline {
   text-decoration: none;
+}
+.backArrow {
+  transform: rotateZ(-180deg);
+  width: 48px;
+  height: 33px;
+  margin: 10px;
 }

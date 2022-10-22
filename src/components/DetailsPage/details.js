@@ -27,14 +27,11 @@ const CurrencyExchange = () => {
           return (
             <Card className="text-center $green-100">
               <Card.Body className="text">
-                <Card.Title>
-                  Details on the excahnge of {data.ticker}
-                </Card.Title>
                 <Card.Text>
                   <h3>
                     Explore the rates and click the back button to view more
                   </h3>
-                  <Table striped bordered hover size="sm">
+                  <Table striped bordered hover size="md" className="fs-3">
                     <thead>
                       <tr>
                         <th>#</th>
@@ -75,8 +72,8 @@ const CurrencyExchange = () => {
                       </tr>
                       <tr>
                         <td>7</td>
-                        <td>Change</td>
-                        <td>{data.change}</td>
+                        <td>Changes</td>
+                        <td>{data.changes}</td>
                       </tr>
                       <tr>
                         <td>8</td>
@@ -88,7 +85,7 @@ const CurrencyExchange = () => {
                 </Card.Text>
               </Card.Body>
               <Card.Footer>
-                <Button variant="cyan-600" onClick={() => navigate("/")}>
+                <Button variant="cyan-600 cont" onClick={() => navigate("/")}>
                   <div className="backBtn">
                     <img className="back" src={back} />
                     <h3>Back</h3>
