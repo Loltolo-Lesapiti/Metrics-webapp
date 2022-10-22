@@ -57,8 +57,6 @@ npx eslint ."
 - GitHub: [@petrolesapiti](https://github.com/Loltolo-Lesapiti)
 - LinkedIn: [@petrolesapiti](https://www.linkedin.com/in/petrolesapitiloltolo/)
 
-## Collaborators
-
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
