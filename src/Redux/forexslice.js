@@ -7,13 +7,10 @@ const initialState = {
   currency: [],
   error: "",
 };
-export const url="https://financialmodelingprep.com/api/v3/fx?apikey=86a9aedd0311ac1dab63f6b5b96e0c2c"
+export const url =
+  "https://financialmodelingprep.com/api/v3/fx?apikey=1cdc5663c8564e015decbbd8a2c31931";
 export const fetchCurrencies = createAsyncThunk("currency/fetchUsers", () =>
-  axios
-    .get(
-      url
-    )
-    .then((response) => response.data)
+  axios.get(url).then((response) => response.data)
 );
 const currencySlice = createSlice({
   name: "currency",

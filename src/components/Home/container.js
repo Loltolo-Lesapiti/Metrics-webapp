@@ -10,7 +10,6 @@ import Form from 'react-bootstrap/Form';
 import { fetchCurrencies } from '../../Redux/forexslice';
 import Slider from './slider';
 import slide3 from '../../images/money.jpg';
-// import back from '../../images/back.jpg';
 
 export default function Forexcontainer() {
   const [searchInput, setSearchInput] = useState('');
@@ -64,15 +63,7 @@ export default function Forexcontainer() {
                 to={`/CurrencyExchange/${currency.bid}`}
               >
                 <Card>
-                  {/* <div className="imageBody"> */}
                   <Card.Img variant="top" className="cardImage" src={slide3} />
-
-                  {/* <img
-                      className="backArrow"
-                      alt="Back arrow image"
-                      src={back}
-                    />
-                  </div> */}
                   <Card.Body className="cardbady">
                     <Card.Title>{currency.ticker}</Card.Title>
                     <Card.Text className="cardtext">
