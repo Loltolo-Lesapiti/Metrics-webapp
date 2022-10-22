@@ -20,7 +20,7 @@ You can watch [here](https://remarkable-speculoos-576277.netlify.app/) a live de
 
 ## Video demo
 
-You can watch [here](https://drive.google.com/file/d/1yol-p6OhU_80DbofXPm7eBvgEkb1R67q/view?usp=sharing) a video demo of our project.
+You can watch [here](https://drive.google.com/file/d/1mDa-p5gaZX7Xc2D1VApZPAneqD6nY7JG/view?usp=sharing) a video demo of our project.
 
 ## Test
 
