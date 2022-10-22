@@ -2,7 +2,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import Table from 'react-bootstrap/Table';
+import ListGroup from 'react-bootstrap/ListGroup';
 import './details.css';
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
@@ -40,48 +40,41 @@ const CurrencyExchange = () => {
             <Card.Body className="text" id="cardBody">
               <div className="cardHome"></div>
               <Card.Text>
-                <Table striped bordered hover size="md" className="fs-5">
-                  <thead>
-                    <tr>
-                      <th>Currency Details</th>
-                      <th>Figures as it stands</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>Ticker</td>
-                      <td>{data.ticker}</td>
-                    </tr>
-                    <tr>
-                      <td>Bid</td>
-                      <td>{data.bid}</td>
-                    </tr>
-                    <tr>
-                      <td>Ask</td>
-                      <td>{data.ask}</td>
-                    </tr>
-                    <tr>
-                      <td>Open</td>
-                      <td>{data.open}</td>
-                    </tr>
-                    <tr>
-                      <td>Low</td>
-                      <td>{data.low}</td>
-                    </tr>
-                    <tr>
-                      <td>High</td>
-                      <td>{data.high}</td>
-                    </tr>
-                    <tr>
-                      <td>Changes</td>
-                      <td>{data.changes}</td>
-                    </tr>
-                    <tr>
-                      <td>Date</td>
-                      <td>{data.date}</td>
-                    </tr>
-                  </tbody>
-                </Table>
+                <ListGroup>
+                  <h4>Currency Information</h4>
+                  <ListGroup.Item id="listDetails" action variant="light">
+                    <h5>Currency</h5>
+                    <h5>{data.ticker}</h5>
+                  </ListGroup.Item>
+                  <ListGroup.Item id="listDetails" action variant="dark">
+                    <h5>Bid</h5>
+                    <h5>{data.bid}</h5>
+                  </ListGroup.Item>
+                  <ListGroup.Item id="listDetails" action variant="light">
+                    <h5>Ask</h5>
+                    <h5>{data.ask}</h5>
+                  </ListGroup.Item>
+                  <ListGroup.Item id="listDetails" action variant="dark">
+                    <h5>Open</h5>
+                    <h5>{data.open}</h5>
+                  </ListGroup.Item>
+                  <ListGroup.Item id="listDetails" action variant="light">
+                    <h5>Low</h5>
+                    <h5>{data.low}</h5>
+                  </ListGroup.Item>
+                  <ListGroup.Item id="listDetails" action variant="dark">
+                    <h5>High</h5>
+                    <h5>{data.high}</h5>
+                  </ListGroup.Item>
+                  <ListGroup.Item id="listDetails" action variant="light">
+                    <h5>Changes</h5>
+                    <h5>{data.changes}</h5>
+                  </ListGroup.Item>
+                  <ListGroup.Item id="listDetails" action variant="dark">
+                    <h5>Date</h5>
+                    <h5>{data.date}</h5>
+                  </ListGroup.Item>
+                </ListGroup>
               </Card.Text>
             </Card.Body>
           </Card>

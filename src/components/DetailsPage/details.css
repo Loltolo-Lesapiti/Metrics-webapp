@@ -6,6 +6,7 @@
 
 body {
   background: rgb(219, 215, 223);
+  font-family: "Lato", sans-serif;
 }
 
 .back {
@@ -41,9 +42,16 @@ body {
 }
 
 #navText {
-  color: black;
+  color: rgba(0, 0, 0, 0.76);
+  font-weight: 500;
+  font-size: 24px;
 }
 
 #cardBody {
   padding: 0;
+}
+
+#listDetails {
+  display: flex;
+  justify-content: space-between;
 }
