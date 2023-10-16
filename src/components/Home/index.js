@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 import {
   Card,
   CardBody,
@@ -29,18 +30,28 @@ export default function Forexcontainer() {
   }, [dispatch]);
   return (
     <>
-      <div className="flex w-full gap-2 mt-6 ">
-        <Input
-          type="search"
-          placeholder="Search by currency name i.e USD"
-          aria-label="Search"
-          onChange={handleChange}
-          value={searchInput}
-          className="pr-20 bg-slate-400 shadow-2xl shadow-slate-400/50 text-lg rounded-2xl"
-          containerProps={{
-            className: "min-w-[288px]",
+      <div className="flex flex-col items-center mt-6">
+        <motion.div
+          whileHover={{
+            scale: 1.1,
+            border: "solid indigo-600",
+            ease: "easeInOut",
+            delay: 1000,
           }}
-        />
+          className="flex w-full justify-center md:w-3/4 "
+        >
+          <Input
+            type="search"
+            placeholder="Search by currency name i.e USD"
+            aria-label="Search"
+            onChange={handleChange}
+            value={searchInput}
+            className="pr-20 bg-slate-400 shadow-2xl shadow-slate-400/50 text-lg rounded-2xl"
+            containerProps={{
+              className: "min-w-[288px]",
+            }}
+          />
+        </motion.div>
       </div>
       {/* eslint-disable */}
 
@@ -60,8 +71,16 @@ export default function Forexcontainer() {
           })
           .slice(0, 6)
           .map((currency) => (
-            <Card
-              className="mt-6 w-96 bg-zinc-500 shadow-2xl shadow-zinc-500/50"
+            <motion.Card
+              whileHover={{
+                x: 5,
+                y: 5,
+                type: "spring",
+                stiffness: 100,
+                ease: "linear",
+                delay: 1000,
+              }}
+              className="mt-6 w-96 rounded border-solid border-indigo-600 bg-zinc-500 shadow-2xl shadow-zinc-500/50"
               key={currency.id}
             >
               <CardBody>
@@ -105,7 +124,7 @@ export default function Forexcontainer() {
                   </Button>
                 </Link>
               </CardFooter>
-            </Card>
+            </motion.Card>
           ))}
       </div>
     </>
