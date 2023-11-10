@@ -1,5 +1,5 @@
-import { useParams } from "react-router-dom";
-import { useSelector } from "react-redux";
+import { useParams } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 import {
   List,
   ListItem,
@@ -7,7 +7,7 @@ import {
   Chip,
   Card,
   Typography,
-} from "@material-tailwind/react";
+} from '@material-tailwind/react';
 
 const CurrencyExchange = () => {
   const currencies = useSelector((state) => state.currency.currency);
