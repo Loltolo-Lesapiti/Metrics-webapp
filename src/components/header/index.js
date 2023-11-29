@@ -1,20 +1,19 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
 import {
   Navbar,
   MobileNav,
   Typography,
   Button,
   IconButton,
-} from '@material-tailwind/react';
+} from "@material-tailwind/react";
 
 export default function Nav() {
   const [openNav, setOpenNav] = React.useState(false);
 
   React.useEffect(() => {
     window.addEventListener(
-      'resize',
-      () => window.innerWidth >= 960 && setOpenNav(false),
+      "resize",
+      () => window.innerWidth >= 960 && setOpenNav(false)
     );
   }, []);
 

@@ -1,5 +1,5 @@
-import { useState, useEffect } from 'react';
-import { motion } from 'framer-motion';
+import { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 import {
   Card,
   CardBody,
@@ -7,13 +7,13 @@ import {
   Typography,
   Button,
   Input,
-} from '@material-tailwind/react';
-import { Link } from 'react-router-dom';
-import { useSelector, useDispatch } from 'react-redux';
-import { fetchCurrencies } from '../../Redux/forexslice';
+} from "@material-tailwind/react";
+import { Link } from "react-router-dom";
+import { useSelector, useDispatch } from "react-redux";
+import { fetchCurrencies } from "../../Redux/forexslice";
 
 export default function Forexcontainer() {
-  const [searchInput, setSearchInput] = useState('');
+  const [searchInput, setSearchInput] = useState("");
   const currencies = useSelector((state) => state.currency.currency);
   const handleChange = (e) => {
     e.preventDefault();
@@ -34,8 +34,8 @@ export default function Forexcontainer() {
         <motion.div
           whileHover={{
             scale: 1.1,
-            border: 'solid indigo-600',
-            ease: 'easeInOut',
+            border: "solid indigo-600",
+            ease: "easeInOut",
             delay: 1000,
           }}
           className="flex w-full justify-center md:w-3/4 "
@@ -48,7 +48,7 @@ export default function Forexcontainer() {
             value={searchInput}
             className="pr-20 bg-slate-400 shadow-2xl shadow-slate-400/50 text-lg rounded-2xl"
             containerProps={{
-              className: 'min-w-[288px]',
+              className: "min-w-[288px]",
             }}
           />
         </motion.div>
@@ -94,7 +94,7 @@ export default function Forexcontainer() {
                 <Typography variant="h5" color="blue-gray" className="mb-2">
                   {currency.ticker}
                 </Typography>
-                <Typography>
+                <Typography className="text-bold font-2xl">
                   The bidding price is {currency.bid}. Click on the currency to
                   view more details.
                 </Typography>

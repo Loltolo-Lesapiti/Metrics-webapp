@@ -1,5 +1,5 @@
-import { useParams } from 'react-router-dom';
-import { useSelector } from 'react-redux';
+import { useParams } from "react-router-dom";
+import { useSelector } from "react-redux";
 import {
   List,
   ListItem,
@@ -7,7 +7,7 @@ import {
   Chip,
   Card,
   Typography,
-} from '@material-tailwind/react';
+} from "@material-tailwind/react";
 
 const CurrencyExchange = () => {
   const currencies = useSelector((state) => state.currency.currency);
@@ -22,7 +22,7 @@ const CurrencyExchange = () => {
           }
         })
         .map((data) => (
-          <Card className="w-full mx-auto my-auto">
+          <Card className="w-50% mx-auto my-auto">
             <Typography variant="h4" color="blue-gray">
               Information on {data.ticker} currency excahnge
             </Typography>
